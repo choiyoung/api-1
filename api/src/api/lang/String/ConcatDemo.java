@@ -1,0 +1,14 @@
+package api.lang.String;
+
+public class ConcatDemo {
+	public static void main(String[] args) {
+    //+연산자 사용
+		String str1 = "자바";
+     String str2 = "API학습중..";
+     String str3 = str1+str2;
+     System.out.println("+연산자 사용 결과" + str3);
+     //concat메소드
+     String str4 = "concat() 사용시   : 헬로우,";
+     System.out.println(str4.concat("자바월드.."));
+	}
+}
