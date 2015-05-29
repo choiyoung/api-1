@@ -53,7 +53,7 @@ public void setMath(int math) {
 국어 + 영어 +수학 
 
 */public int getTotal() {
-	return 0;
+	return this.eng+this.kor+this.math;
 }
 @Override
 public String toString() {
