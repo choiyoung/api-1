@@ -1,4 +1,4 @@
-package api.util.vector;
+package api.util.vector.answer;
 
 public class GradeVO {
 	//변수 선언시 동일한 타입이 있으면
@@ -9,7 +9,7 @@ private int kor,eng,math;
 public GradeVO() {
 	this("","",0,0,0);
 }
-public GradeVO(String hak, String name, int kor, int eng, int math) {
+public GradeVO(String name,String hak,int kor, int eng, int math) {
 	super();
 	this.hak = hak;
 	this.name = name;
@@ -58,6 +58,6 @@ public void setMath(int math) {
 @Override
 public String toString() {
 	return "성적표 [학번=" + hak + ", 이름=" + name + ", 국어=" + kor + ", 영어="
-			+ eng + ", 수학=" + math + "]";
+			+ eng + ", 수학=" + math + "총점"+getTotal()+"]";
 }
 }

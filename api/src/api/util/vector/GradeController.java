@@ -2,6 +2,9 @@ package api.util.vector;
 
 import java.util.Vector;
 
+import api.util.vector.answer.GradeService;
+import api.util.vector.answer.GradeVO;
+
 public class GradeController {
 
 	public static void main(String[] args) {
@@ -17,10 +20,12 @@ public class GradeController {
 		//출력
 		  System.out.println("----------------------------");
 		  aa.print();
+		  System.out.println("------------------111----------");
+		 
 	  
 		//이름검색
 	    System.out.println("-----------------------------");
-	    Vector<String> vec = new Vector<String>();
+	    Vector<String> vec= new Vector<String>();
 		vec = aa.searchGradeByName("hulk");
 		for (String k : vec) {
 			System.out.println(k);

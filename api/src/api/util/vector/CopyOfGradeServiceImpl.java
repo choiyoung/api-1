@@ -5,7 +5,7 @@ import java.util.Vector;
 import api.util.vector.answer.GradeService;
 import api.util.vector.answer.GradeVO;
 
-public class GradeServiceImpl implements GradeService {
+public class CopyOfGradeServiceImpl implements GradeService {
 	Vector<Object> vector= new Vector<Object>();
 	GradeVO[] gradeVO;
 	GradeVO vo;
